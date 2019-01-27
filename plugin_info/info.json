@@ -1,0 +1,12 @@
+{
+	"id" : "rcswitch",
+	"name" : "Rcswitch",
+	"description" : "Plugin permettant l'utilisation d'un kit 433 MHz par les GPIO",
+	"licence" : "AGPL",
+	"author" : "Siegwalt Steve",
+	"require" : "2.4",
+	"category" : "automation protocol",
+	"hasDependency" : 1,
+    "documentation" : "https://sephyroth67.github.io/doc/#language#/"
+ 
+}

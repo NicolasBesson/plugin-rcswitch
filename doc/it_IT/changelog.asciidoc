@@ -1,0 +1,25 @@
+*V1.54 : Ajout récupération code Homeeasy + modification RFSniffer
+--
+*V1.53 : Correction du protocole Otio + correction compatibilité jeedom v2
+--
+*V1.52 : Correction de la sélection par défaut des pins
+--
+*V1.51 : Ajout protocole Otio
+--
+*V1.5 : Possibilité de définir les pin GPIO + simplification du protoole Send 
+--
+*V1.42 : Ajout categories
+--
+*V1.41 : Ajout protocole Blyss + Brennenstuhl + Homeeasy
+--
+*V1.40 : Refonte du mode esclave 
+--
+*V1.32 : Modifications des scripts pour la compatibilitée raspberry + refonte du mode esclave
+--
+*V1.3 : Ajout des protocoles TypeA, TypeB et TypeD ajout d'un bouton pour fixer les droits + ajout mode déporté 
+--
+*V1.2 : Ajout du protocole Phenix
+--
+*V1.1 : Optimisation de la fonction permettant de récupéérer un code de télécommande (diminution des ressources systeme utilisées)
+--
+*V1.0 : Première beta

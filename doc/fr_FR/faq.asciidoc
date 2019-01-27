@@ -1,0 +1,6 @@
+
+[panel,primary]
+.Est-ce que je peux utiliser le plugin pour la reception de signal ?
+--
+Non, le sniffeur de code utilise trop de ressources pour pouvoir fonctionner en continu.
+--

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>rcswitch</id>
+    <name>Rcswitch</name>
+    <description>Plugin permettant l'utilisation d'un kit 433 MHz par les GPIO</description>
+    <icon>fa fa-rss</icon>
+    <licence>AGPL</licence>
+    <author>Siegwalt Steve</author>
+    <installation>
+Définir les GPIO de l'émetteur et du récepteur
+Installer WiringPi / WiringBPi sur le Jeedom connecté au  kit
+Fixer les droits sur le Jeedom connecté au  kit
+</installation>
+    <require></require>
+   <hasDependency>1</hasDependency>
+    <category>automation protocol</category>
+
+    
+</info>
+

@@ -1,0 +1,10 @@
+[panel,danger]
+.L'execution de l'action retourne une erreur 139
+--
+-Les GPIO ne sont pas configuré
+--
+-Les droits n'ont pas été fixé
+--
+-La mise en forme du code ne correspond pas
+
+--

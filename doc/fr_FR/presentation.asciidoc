@@ -1,0 +1,5 @@
+=== Rcswitch, Plugin permettant l’utilisation d’un kit 433 MHz par les GPIO 
+
+Ce plugin permet d’utiliser un kit 433 MHz branché sur les GPIO
+pour controler toutes sortes de prises rf de type chacon ou low cost 
+
