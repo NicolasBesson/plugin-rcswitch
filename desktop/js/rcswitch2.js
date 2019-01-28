@@ -71,7 +71,7 @@ function addCmdToTable(_cmd) {
 $('#bt_rfsniffer').on('click',function(){
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'RFsniffer',
 		},
@@ -93,7 +93,7 @@ $.ajax({
 $('#bt_hereceive').on('click',function(){
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'HEreceive',
 		},

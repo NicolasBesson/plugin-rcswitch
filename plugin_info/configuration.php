@@ -125,7 +125,7 @@ $('#bt_installDepsrasp').on('click',function(){
       if (result) {
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'RASPIinstall',
 		},
@@ -148,7 +148,7 @@ $('#bt_installDepsbpi').on('click',function(){
       if (result) {
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'BPIinstall',
 		},
@@ -172,7 +172,7 @@ $('#bt_installDepsbpro').on('click',function(){
       if (result) {
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'BPROinstall',
 		},
@@ -195,7 +195,7 @@ $('#bt_installDepsopi').on('click',function(){
       if (result) {
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'OPIinstall',
 		},
@@ -219,7 +219,7 @@ $('#bt_installDepsodroid').on('click',function(){
       if (result) {
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'ODROIDinstall',
 		},
@@ -241,7 +241,7 @@ $.ajax({
 $('#bt_fixscript').on('click',function() {
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'Fixperm',
 		},
@@ -261,7 +261,7 @@ $.ajax({
 $('#bt_rfsniffer').on('click',function(){
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'RFsniffer',
 		},
@@ -282,7 +282,7 @@ $.ajax({
 $('#bt_hereceive').on('click',function(){
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'HEreceive',
 		},
@@ -302,7 +302,7 @@ $.ajax({
 $('#bt_gpio').on('click',function(){
 $.ajax({
 		type: 'POST',
-		url: 'plugins/rcswitch2/core/ajax/rcswitch.ajax.php',
+		url: 'plugins/rcswitch2/core/ajax/rcswitch2.ajax.php',
 		data: {
 			action: 'Gpio',
 		},
