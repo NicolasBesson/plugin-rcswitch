@@ -41,7 +41,12 @@ if (!isConnect()) {
 						<input id="pinemit" class="configKey form-control" type="text" data-l1key="pinemit" placeholder="Click on GPIO">	
 						</input>
 					</div>
-
+					
+					<label class="col-lg-2 control-label">Pin Power</label>
+					<div class="col-lg-2">
+						<input id="pinpower" class="configKey form-control" type="text" data-l1key="pinpower" placeholder="Click on GPIO">	
+						</input>
+					</div>
                 </div>
         <div class="form-group">
 	</div>
