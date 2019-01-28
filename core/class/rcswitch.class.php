@@ -46,7 +46,7 @@ class rcswitch extends eqLogic {
 #		
 #	}
     public static function dependancy_install() {
-        log::add('rcswitch','info','Installation des dépéndances rcswitch');
+        log::add('rcswitch2','info','Installation des dépéndances rcswitch');
         $resource_path = realpath(dirname(__FILE__) . '/../../ressources/scripts');
         passthru('sudo /bin/bash ' . $resource_path . '/install.sh ' . $resource_path . ' > ' . log::getPathToLog('rcswitch_update') . ' 2>&1 &');
     }
@@ -83,14 +83,14 @@ class rcswitch extends eqLogic {
 	}
 	public static function RFsniffer() {
 		log::remove('RFsniffer');
-		$pinrecept = config::byKey('pinrecept', 'rcswitch');
+		$pinrecept = config::byKey('pinrecept', 'rcswitch2');
 		$cmd = 'sudo ' . dirname(__FILE__) . '/../../ressources/scripts/RFSniffer'. " " .  $pinrecept;
 		$cmd .= ' >> ' . log::getPathToLog('RFsniffer') . ' 2>&1 &';
 		exec($cmd);
 	}
 	public static function HEreceive() {
 		log::remove('HEreceive');
-		$pinrecept = config::byKey('pinrecept', 'rcswitch');
+		$pinrecept = config::byKey('pinrecept', 'rcswitch2');
 		$cmd = 'sudo ' . dirname(__FILE__) . '/../../ressources/scripts/HEreceive'. " " .  $pinrecept;
 		$cmd .= ' >> ' . log::getPathToLog('HEreceive') . ' 2>&1 &';
 		exec($cmd);
@@ -171,20 +171,30 @@ class rcswitchCmd extends cmd {
 	public function execute($_options = array()) {
 
 	
-	$rcswitch_path = dirname(__FILE__) . '/../../ressources/scripts/';
-		
-	$pinemit = config::byKey('pinemit', 'rcswitch');
+		$rcswitch_path = dirname(__FILE__) . '/../../ressources/scripts/';
 
-	
+		// Turn Power ON
+		$pinpower = config::byKey('pinpower', 'rcswitch2');
+		$command = "gpio write " .  $pinpower . " 1";
+		$request_shell = new com_shell("sudo" . " " . $command . ' 2>&1');
+		$request_shell->exec();
+
+		usleep(125*1000);
+
+		// Send Command
+		$pinemit = config::byKey('pinemit', 'rcswitch2');
 		$eqLogic = $this->getEqLogic();
 		$command = $rcswitch_path . $this->getConfiguration('protocole') . " " .  $pinemit . " " .  $this->getConfiguration('code')  ;
 		$request_shell = new com_shell("sudo" . " " . $command . ' 2>&1');
 		$request_shell->exec();
-				
-		
 
-		
-		
+		usleep(200*1000);
+
+		// Turn Power OFF
+		$command = "gpio write " .  $pinpower . " 0";
+		$request_shell = new com_shell("sudo" . " " . $command . ' 2>&1');
+		$request_shell->exec();
+
 	}
 
 /*     * **********************Getteur Setteur*************************** */

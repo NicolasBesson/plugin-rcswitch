@@ -1,9 +1,9 @@
 {
-	"id" : "rcswitch",
-	"name" : "Rcswitch",
+	"id" : "rcswitch2",
+	"name" : "Rcswitch Updated",
 	"description" : "Plugin permettant l'utilisation d'un kit 433 MHz par les GPIO",
 	"licence" : "AGPL",
-	"author" : "Siegwalt Steve",
+	"author" : "Siegwalt Steve & Billounet",
 	"require" : "2.4",
 	"category" : "automation protocol",
 	"hasDependency" : 1,
