@@ -19,7 +19,7 @@
 /* * ***************************Includes********************************* */
 require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
 
-class rcswitch extends eqLogic {
+class rcswitch2 extends eqLogic {
 
 
 	public static function dependancy_info() {
@@ -153,7 +153,7 @@ class rcswitch extends eqLogic {
 	/*     * **********************Getteur Setteur*************************** */
 }
 
-class rcswitchCmd extends cmd {
+class rcswitch2Cmd extends cmd {
 	/*     * *************************Attributs****************************** */
 
 	/*     * ***********************Methode static*************************** */
