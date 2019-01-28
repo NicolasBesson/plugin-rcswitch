@@ -15,7 +15,7 @@ echo 40 > /tmp/Rcswitch
 echo "Attribution des droits aux scripts"
 cd ..
 cd ..
-cd plugins/rcswitch/ressources/scripts
+cd plugins/rcswitch2/ressources/scripts
 chmod +x RFSniffer
 chmod +x Send
 chmod +x arc

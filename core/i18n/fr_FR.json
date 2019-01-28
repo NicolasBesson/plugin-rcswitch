@@ -1,8 +1,8 @@
 {
-    "plugins\/rcswitch\/plugin_info\/info.xml": {
+    "plugins\/rcswitch2\/plugin_info\/info.xml": {
         "Plugin permettant l'utilisation d'un kit 433 Mhz par les GPIO": "Plugin permettant l'utilisation d'un kit 433 Mhz par les GPIO",
     },
-    "plugins\/rcswitch\/desktop\/php\/rcswitch.php": {
+    "plugins\/rcswitch2\/desktop\/php\/rcswitch2.php": {
         "Ajouter un équipement": "Ajouter un équipement",
         "Rechercher": "Rechercher",
         "Mes équipements": "Mes équipements",
@@ -18,7 +18,7 @@
         "Supprimer": "Supprimer",
         "Sauvegarder": "Sauvegarder",
     },
-    "plugins\/rcswitch\/desktop\/js\/rcswitch.js": {
+    "plugins\/rcswitch2\/desktop\/js\/rcswitch2.js": {
         "Nom": "Nom",
         "Protocole": "Protocole",
         "Tester": "Tester",
